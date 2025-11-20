@@ -170,8 +170,8 @@ class Index implements LoggerAwareInterface
             $minLng = -180;
             $maxLng = 180;
         } else if ($minLng > $maxLng) {
-            $easternHem = $this->getClusters([$minLng, $minLat, 180, $maxLat], $zoom);
-            $westernHem = $this->getClusters([-180, $minLat, $maxLng, $maxLat], $zoom);
+            $easternHem = $this->getClusters($zoom, [$minLng, $minLat, 180, $maxLat]);
+            $westernHem = $this->getClusters($zoom, [-180, $minLat, $maxLng, $maxLat]);
 
             return array_merge(
                 $easternHem,
