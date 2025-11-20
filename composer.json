@@ -1,5 +1,5 @@
 {
-    "name": "datashaman/supercluster-php",
+    "name": "prankster22/supercluster-php",
     "license": "ISC",
     "type": "library",
     "keywords": [
@@ -11,7 +11,7 @@
     "authors": [
         {
             "name": "Marlin Forbes",
-            "email": "marlinf@datashaman.com"
+            "email": ""
         }
     ],
     "require": {
